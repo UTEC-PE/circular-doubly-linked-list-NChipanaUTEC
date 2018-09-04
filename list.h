@@ -104,7 +104,10 @@ class List {
             }
             return temp -> data;
         }
-        void concat(List<T> &other){}
+        void concat(List<T> &other){
+            start -> prev -> next = other.start;
+            other.start -> prev = start -> prev;
+        }
         bool empty(){
             return nodes == 0;
         }

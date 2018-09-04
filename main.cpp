@@ -27,10 +27,12 @@ int main(int argc, char *argv[]) {
     cout << "===========================================================" << endl << endl;
 
     List<int> test;
+    List<int> list;
 
     const int numberOfElements = generateRandomInt(MIN, MAX);
     for (int i = 0; i < numberOfElements; i++) {
         insertIntoList(test);
+        insertIntoList(list);
     }
 
     assert(test.size() == numberOfElements && "Something is wrong with the push methods");
@@ -70,12 +72,14 @@ int main(int argc, char *argv[]) {
     --ite;
     assert(test.get(numberOfElements - 2) == *ite && "Something is wrong with the iterator (-- operator)");
 
+    test.concat(list);
+
     for (ite = test.begin(); ite != test.end(); ++ite) {
         cout << *ite << " ";
     }
     cout << endl;
 
-    system("read");
+ //   system("read");
     return EXIT_SUCCESS;
 
 }
