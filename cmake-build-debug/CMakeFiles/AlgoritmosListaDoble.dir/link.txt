@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/AlgoritmosListaDoble.dir/main.cpp.o  -o AlgoritmosListaDoble 

@@ -1,0 +1,3 @@
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/cmake-build-debug/CMakeFiles/AlgoritmosListaDoble.dir

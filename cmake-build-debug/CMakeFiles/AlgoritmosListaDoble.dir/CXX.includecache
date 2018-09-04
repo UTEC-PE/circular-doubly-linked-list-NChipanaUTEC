@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/iterator.h
+node.h
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/node.h
+
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/list.h
+iostream
+-
+node.h
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/node.h
+iterator.h
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/iterator.h
+
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/main.cpp
+iostream
+-
+random
+-
+assert.h
+-
+string.h
+-
+list.h
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/list.h
+
+/home/chip/Algoritmos y Estructuras de Datos/circular-doubly-linked-list-NChipanaUTEC/node.h
+iostream
+-
+
