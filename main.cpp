@@ -16,6 +16,7 @@ using namespace std;
 #define POP_FRONT 2
 #define POP_BACK 3
 
+
 int generateRandomInt(int min, int max);
 void insertIntoList(List<int> &numbers);
 void removeFromList(List<int> &numbers);
@@ -40,6 +41,7 @@ int main(int argc, char *argv[]) {
     }
 
     const int newNumbersSize = numberOfElements - elementsToRemove;
+    cout << numberOfElements << " " << elementsToRemove;
     assert(test.size() == newNumbersSize && "Something is wrong with the pop functions");
 
     test.clear();
@@ -59,7 +61,7 @@ int main(int argc, char *argv[]) {
     }
     assert(test.get(position) == *ite && "Something is wrong with the get method or the iterator");
     
-    ite = test.begin();
+    ite = test.end();
     for (int i = 0; i < numberOfElements - 1; i++) {
         ++ite;
     }
@@ -75,6 +77,7 @@ int main(int argc, char *argv[]) {
 
     system("read");
     return EXIT_SUCCESS;
+
 }
 
 int generateRandomInt(int min, int max) {
@@ -100,4 +103,4 @@ void removeFromList(List<int> &numbers) {
         case POP_FRONT: numbers.pop_front(); break;
         case POP_BACK: numbers.pop_back(); break;
     }
-} 
+}
