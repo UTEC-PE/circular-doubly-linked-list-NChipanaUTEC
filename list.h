@@ -19,13 +19,13 @@ class List {
         }
         T front(){
         if (nodes == 0)
-            cout << "Lista Vacia" << endl;
+            cout << "Lista Vacia" << endl; // Una excepción sería mejor
         else
             return start -> data;
         }
         T back(){
         if (nodes == 0)
-            cout << "Lista Vacía" << endl;
+            cout << "Lista Vacía" << endl; // Una excepción sería mejor
         else
             return start -> prev -> data;
         }
@@ -39,7 +39,7 @@ class List {
             }
             else if(nodes == 1){
                 start -> next = temp;
-                start -> prev = temp;
+                start -> prev = temp; // Podría reducirse
                 temp -> next = start;
                 temp -> prev = start;
             }
@@ -61,7 +61,7 @@ class List {
                 start -> prev = start;
             }
             else if(nodes == 1){
-                start -> next = temp;
+                start -> next = temp;// Podría reducirse
                 start -> prev = temp;
                 temp -> next = start;
                 temp -> prev = start;
@@ -74,7 +74,7 @@ class List {
             }
             nodes ++;
         }
-        void pop_front(){
+        void pop_front(){ // No estás borrando el nodo
             if(nodes == 0)
                 cout << "Lista Vacía" << endl;
             else if(nodes == 1)
@@ -86,7 +86,7 @@ class List {
             }
             nodes --;
         }
-        void pop_back(){
+        void pop_back(){// No estás borrando el nodo
             if(nodes == 0)
                 cout << "Lista Vacía" << endl;
             else if(nodes == 1)
@@ -104,7 +104,7 @@ class List {
             }
             return temp -> data;
         }
-        void concat(List<T> &other){
+        void concat(List<T> &other){ // Falta
             start -> prev -> next = other.start;
             other.start -> prev = start -> prev;
         }
@@ -127,7 +127,7 @@ class List {
             return Iterator<T>(start->prev);
         }
 
-        ~List(){}
+        ~List(){} // No se implementó
 };
 
 #endif
